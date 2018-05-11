@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PushNdefActivity">
+
+    <TextView
+        android:id="@+id/textViewMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/push_msg_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/buttonAbsUri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/push_btn_absolute_uri" />
+
+        <Button
+            android:id="@+id/buttonMime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/push_btn_mime" />
+
+        <Button
+            android:id="@+id/buttonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/push_btn_text" />
+
+        <Button
+            android:id="@+id/buttonUri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/push_btn_uri" />
+
+        <Button
+            android:id="@+id/buttonExt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/push_btn_external" />
+
+        <Button
+            android:id="@+id/buttonAAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/push_btn_aar" />
+    </LinearLayout>
+
+</RelativeLayout>

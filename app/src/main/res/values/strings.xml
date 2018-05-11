@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NFC Demo</string>
+    <string name="main_btn_reader">Reader</string>
+    <string name="main_btn_push_ndef">Push NDEF Message</string>
+    <string name="main_btn_cardemulation">Card Emulation</string>
+    <string name="reader_msg_default">On Reader Mode</string>
+    <string name="push_msg_default">NDEF Message Type:\n</string>
+    <string name="push_btn_absolute_uri">TNF_ABSOLUTE_URI</string>
+    <string name="push_btn_mime">TNF_MIME_MEDIA</string>
+    <string name="push_btn_text">TNF_WELL_KNOWN with RTD_TEXT</string>
+    <string name="push_btn_uri">TNF_WELL_KNOWN with RTD_URI</string>
+    <string name="push_btn_external">TNF_EXTERNAL_TYPE</string>
+    <string name="push_btn_aar">Android Application Records</string>
+    <string name="msg_nfc_nonavailable">NFC is not available</string>
+    <string name="msg_nfc_disable">NFC is disabled</string>
+    <string name="msg_prefix_payload">Payload:\ </string>
+
+</resources>
