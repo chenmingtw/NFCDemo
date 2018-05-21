@@ -153,7 +153,8 @@ public class ReaderActivity extends Activity {
             }
 
             Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
-            textViewMsg.append(tag.toString());
+            textViewMsg.append(tag.toString() + "\n");
+            textViewMsg.append("ID: [" + convertByteArrayToHexString(tag.getId()) + "]");
         }
 
         printSpacer();
@@ -212,5 +213,23 @@ public class ReaderActivity extends Activity {
         }
 
         return null;
+    }
+
+    private String convertByteArrayToHexString(byte[] bytes) {
+        int oct, i4b;
+        String[] hex = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"};
+        StringBuilder res = new StringBuilder();
+
+        for(int i = 0 ; i < bytes.length ; i++) {
+            if (i != 0)
+                res.append(":");
+            oct = (int) bytes[i] & 0xff;
+            i4b = (oct >> 4) & 0x0f;
+            res.append(hex[i4b]);
+            i4b = oct & 0x0f;
+            res.append(hex[i4b]);
+        }
+
+        return res.toString();
     }
 }
