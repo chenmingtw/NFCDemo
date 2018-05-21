@@ -39,6 +39,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ReaderSettingsActivity"
+            android:parentActivityName=".ReaderActivity">
+        </activity>
+        <activity
             android:name=".PushNdefActivity"
             android:configChanges="orientation|screenSize" />
         <activity android:name=".FilterAbsoluteUriActivity">

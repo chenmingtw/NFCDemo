@@ -4,6 +4,7 @@
     <string name="main_btn_push_ndef">Push NDEF Message</string>
     <string name="main_btn_cardemulation">Card Emulation</string>
     <string name="reader_msg_default">On Reader Mode</string>
+    <string name="reader_menu_settings">Settings</string>
     <string name="push_msg_default">NDEF Message Type:\n</string>
     <string name="push_btn_absolute_uri">TNF_ABSOLUTE_URI</string>
     <string name="push_btn_mime">TNF_MIME_MEDIA</string>
@@ -14,5 +15,21 @@
     <string name="msg_nfc_nonavailable">NFC is not available</string>
     <string name="msg_nfc_disable">NFC is disabled</string>
     <string name="msg_prefix_payload">Payload:\ </string>
+
+    <string name="readersettings_title">Reader Settings</string>
+    <string name="readersettings_nfc_tech_list_key">nfc_tech_list</string>
+    <string name="readersettings_nfc_tech_list_title">NFC Tech</string>
+
+    <string-array name="nfc_tech_list_entries">
+        <item>IsoDep</item>
+        <item>NfcA</item>
+        <item>NfcB</item>
+        <item>NfcF</item>
+        <item>NfcV</item>
+        <item>Ndef</item>
+        <item>NdefFormatable</item>
+        <item>MifareClassic</item>
+        <item>MifareUltralight</item>
+    </string-array>
 
 </resources>

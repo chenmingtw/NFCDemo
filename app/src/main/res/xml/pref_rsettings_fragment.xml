@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <MultiSelectListPreference
+        android:key="@string/readersettings_nfc_tech_list_key"
+        android:defaultValue="@array/nfc_tech_list_entries"
+        android:entries="@array/nfc_tech_list_entries"
+        android:entryValues="@array/nfc_tech_list_entries"
+        android:title="@string/readersettings_nfc_tech_list_title" />
+
+</PreferenceScreen>
