@@ -6,42 +6,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".WriterActivity">
 
-    <Button
-        android:id="@+id/buttonReader"
+    <Spinner
+        android:id="@+id/spTagType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="start" />
+
+    <EditText
+        android:id="@+id/etContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/main_btn_reader" />
+        android:ems="10"
+        android:hint="@string/writer_etext_content_hint"
+        android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/buttonWriter"
-        android:layout_width="match_parent"
+        android:id="@+id/btnWrite"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/main_btn_writer" />
-
-    <Button
-        android:id="@+id/buttonPushNDEF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/main_btn_push_ndef" />
-
-    <Button
-        android:id="@+id/buttonCardEmu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/main_btn_cardemulation" />
-
+        android:layout_gravity="end"
+        android:text="@string/writer_btn_write" />
 </LinearLayout>

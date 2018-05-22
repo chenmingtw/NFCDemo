@@ -40,8 +40,9 @@
         </activity>
         <activity
             android:name=".ReaderSettingsActivity"
-            android:parentActivityName=".ReaderActivity">
-        </activity>
+            android:parentActivityName=".ReaderActivity"></activity>
+        <activity
+            android:name=".WriterActivity"></activity>
         <activity
             android:name=".PushNdefActivity"
             android:configChanges="orientation|screenSize" />

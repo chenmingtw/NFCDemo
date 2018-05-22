@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">NFC Demo</string>
     <string name="main_btn_reader">Reader</string>
+    <string name="main_btn_writer">Writer</string>
     <string name="main_btn_push_ndef">Push NDEF Message</string>
     <string name="main_btn_cardemulation">Card Emulation</string>
     <string name="reader_msg_default">On Reader Mode</string>
@@ -30,6 +31,16 @@
         <item>NdefFormatable</item>
         <item>MifareClassic</item>
         <item>MifareUltralight</item>
+    </string-array>
+
+    <string name="writer_etext_content_hint">Enter content here.</string>
+    <string name="writer_btn_write">Write Tag</string>
+    <string name="writer_dialog_msg">Tag \"NFC Tag\" please</string>
+    <string name="writer_toast_written">Tag written</string>
+    <string-array name="writer_type">
+        <item>Uri</item>
+        <item>Phone</item>
+        <item>Text</item>
     </string-array>
 
 </resources>
